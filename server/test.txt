@@ -1,0 +1,70 @@
+Bài thực hành 5 Truyền file giữa client và server trên giao thức TCP
+A. Mục tiêu
+ Hiểu cách viết chương trình truyền file giữa client và server trên giao thức TCP
+B. Lưu ý chung:
+ Sử dụng ngôn ngữ lập trình C, C++ trên Linux
+ Đặt tên thư mục chứa file chương trình theo định dạng: Họ tên sinh viên_5, trong thư
+mục này sẽ có 2 thư mục con là Server và Client, kèm theo 1 file docs trình bày giao
+thức. Thư mục Server chứa chương trình phía server, thư mục Client chứa chương trình
+phía client.
+ File nén dưới dạng zip và tên file là Họ tên sinh viên_5.zip. Không lưu file để download
+và test chương trình.
+ Trong comment ở đầu file chương trình ghi rõ họ tên, mã số sinh viên và mô tả chương
+trình
+ Các bài thực hành không theo đúng quy định sẽ không được chấm
+C. Bài thực hành
+5.1 Viết giao thức truyền file giữa client và server (định dạng thông báo, cách thức xử lý thông báo)
+- Quy định về cổng giao thức
+- Client và server thiết lập phiên làm việc
+- Client gửi lệnh download file
+- Client gửi tên file cần download cho server
+- Nếu file không tồn tại trong thư mục của server, server sẽ gửi thông báo báo lỗi
+- Nếu file tồn tại trong thư mục của server, server sẽ gửi tên file, kích thước file và file cho client
+- Client gửi thông báo kết thúc phiên làm việc
+- Client và server đóng phiên làm việc
+- Lưu ý: Sinh viên trình bày giao thức vào file docs và nộp cùng với code bài 5.2. Cách trình bày
+giao thức có thể tham khảo ở “Bài thực hành số 4”.
+5.2 Viết chương trình client/server cho phép client có thể download file từ server trên giao thức
+TCP
+- Server mở cổng chờ kết nối TCP từ client
+- Client nhận địa chỉ IP của Server từ bàn phím và kết nối với Server
+- Client và server trao đổi thông báo với nhau theo giao thức đã được quy định ở bài 5.1
++ Server xuất ra màn hình tên file và kích thước file nhận được từ client
++ Client xuất kích thước file ra màn hình và lưu file vào thư mục hiện tại
+- Client có thể gửi lệnh download file nhiều lần
+- Kiểm tra kích thước và nội dung file mà client download xem có giống với
+Bài thực hành 5 Truyền file giữa client và server trên giao thức TCP
+A. Mục tiêu
+ Hiểu cách viết chương trình truyền file giữa client và server trên giao thức TCP
+B. Lưu ý chung:
+ Sử dụng ngôn ngữ lập trình C, C++ trên Linux
+ Đặt tên thư mục chứa file chương trình theo định dạng: Họ tên sinh viên_5, trong thư
+mục này sẽ có 2 thư mục con là Server và Client, kèm theo 1 file docs trình bày giao
+thức. Thư mục Server chứa chương trình phía server, thư mục Client chứa chương trình
+phía client.
+ File nén dưới dạng zip và tên file là Họ tên sinh viên_5.zip. Không lưu file để download
+và test chương trình.
+ Trong comment ở đầu file chương trình ghi rõ họ tên, mã số sinh viên và mô tả chương
+trình
+ Các bài thực hành không theo đúng quy định sẽ không được chấm
+C. Bài thực hành
+5.1 Viết giao thức truyền file giữa client và server (định dạng thông báo, cách thức xử lý thông báo)
+- Quy định về cổng giao thức
+- Client và server thiết lập phiên làm việc
+- Client gửi lệnh download file
+- Client gửi tên file cần download cho server
+- Nếu file không tồn tại trong thư mục của server, server sẽ gửi thông báo báo lỗi
+- Nếu file tồn tại trong thư mục của server, server sẽ gửi tên file, kích thước file và file cho client
+- Client gửi thông báo kết thúc phiên làm việc
+- Client và server đóng phiên làm việc
+- Lưu ý: Sinh viên trình bày giao thức vào file docs và nộp cùng với code bài 5.2. Cách trình bày
+giao thức có thể tham khảo ở “Bài thực hành số 4”.
+5.2 Viết chương trình client/server cho phép client có thể download file từ server trên giao thức
+TCP
+- Server mở cổng chờ kết nối TCP từ client
+- Client nhận địa chỉ IP của Server từ bàn phím và kết nối với Server
+- Client và server trao đổi thông báo với nhau theo giao thức đã được quy định ở bài 5.1
++ Server xuất ra màn hình tên file và kích thước file nhận được từ client
++ Client xuất kích thước file ra màn hình và lưu file vào thư mục hiện tại
+- Client có thể gửi lệnh download file nhiều lần
+- Kiểm tra kích thước và nội dung file mà client download xem có giống với
